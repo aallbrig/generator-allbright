@@ -33,8 +33,6 @@ const prepend_correct_folder_prefix = curry((sourceFiles, targetFiles, mapFn) =>
 
 module.exports = class extends Generator {
     async prompting() {
-        const { log } = this;
-
         const os_folder = this.templatePath('os');
         const ide_folder = this.templatePath('ide');
         const language_folder = this.templatePath('language');
