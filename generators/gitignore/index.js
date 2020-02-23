@@ -58,14 +58,11 @@ module.exports = class extends Generator {
         const { log, files_read: { os_files, ide_files, language_files }, answers: { included_git_ignore }} = this;
 
         const prepend_fn_loaded_with_response = prepend_correct_folder_prefix(included_git_ignore);
-        const os_selections = prepend_fn_loaded_with_response(os_files, _ => this.templatePath(`os/${_}`));
-        const ide_selections = prepend_fn_loaded_with_response(ide_files, _ => this.templatePath(`ide/${_}`));
-        const language_selections = prepend_fn_loaded_with_response(language_files, _ => this.templatePath(`language/${_}`));
 
         const selection_paths = [
-            ...os_selections,
-            ...ide_selections,
-            ...language_selections
+            ...prepend_fn_loaded_with_response(os_files, _ => this.templatePath(`os/${_}`)),
+            ...prepend_fn_loaded_with_response(ide_files, _ => this.templatePath(`ide/${_}`)),
+            ...prepend_fn_loaded_with_response(language_files, _ => this.templatePath(`language/${_}`))
         ];
 
         const all_file_contents = await Promise.all(selection_paths.map(file_reader_promise));

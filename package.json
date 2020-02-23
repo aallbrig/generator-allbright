@@ -1,6 +1,6 @@
 {
   "name": "generator-allbright",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Code generators for Andrew Allbright projects",
   "files": [
     "generators"
@@ -9,10 +9,15 @@
     "yeoman-generator"
   ],
   "author": "Andrew Allbright",
+  "scripts": {
+    "start": "node main.js"
+  },
   "license": "MIT",
   "dependencies": {
+    "common-tags": "^1.8.0",
     "inquirer": "^6.2.1",
     "ramda": "^0.26.1",
+    "yeoman-environment": "^2.8.0",
     "yeoman-generator": "^3.2.0"
   },
   "devDependencies": {
