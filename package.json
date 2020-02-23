@@ -1,7 +1,7 @@
 {
   "name": "generator-allbright",
-  "version": "1.0.0",
-  "description": "Shoebox generator for allbright related shenanigans",
+  "version": "1.0.2",
+  "description": "Code generators for Andrew Allbright projects",
   "files": [
     "generators"
   ],
@@ -14,5 +14,9 @@
     "inquirer": "^6.2.1",
     "ramda": "^0.26.1",
     "yeoman-generator": "^3.2.0"
+  },
+  "devDependencies": {
+    "generator-generator": "^4.0.2",
+    "yo": "^3.1.1"
   }
 }
