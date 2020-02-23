@@ -1,8 +1,14 @@
 #### Generator Allbright
 
-Allbright specific meta-programming.
+Andrew Allbright specific "meta-programming" code generators.
+
+#### Installation
+``` bash
+npm install yo -g
+npm link
+```
 
 ##### Usage
-```bash
-yo allbright:git-ignore
+``` bash
+yo allbright:gitignore
 ```
