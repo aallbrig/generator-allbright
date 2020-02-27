@@ -1,4 +1,4 @@
-#### Generator Allbright
+#### YeomanGenerator Allbright
 
 Andrew Allbright specific "meta-programming" code generators.
 
@@ -16,8 +16,10 @@ npm link
 
 ##### Usage
 ``` bash
+Available Commands
+---
 yo allbright
 yo allbright:gitignore
 yo allbright:bash-basic-script
+yo allbright:node-yeoman-generator
 ```
-

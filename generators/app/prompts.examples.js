@@ -42,6 +42,17 @@ const promptsExamples = [
     ]
   },
   {
+    type: 'checkbox',
+    name: 'checkboxPrompt',
+    message: 'This is a "type: checkbox" inquirer prompt',
+    default: 'choice A',
+    choices: [
+      'choice A',
+      'choice B',
+      'choice C'
+    ]
+  },
+  {
     type: 'expand',
     name: 'expandPrompt',
     message: 'This is a "type: expand" inquirer prompt',

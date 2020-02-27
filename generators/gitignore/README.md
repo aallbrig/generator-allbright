@@ -1,6 +1,6 @@
-### Git Ignore Generator
+### Git Ignore YeomanGenerator
 
-Generator for `.gitignore` file.
+YeomanGenerator for `.gitignore` file.
 
 ##### Usage
 ```bash
