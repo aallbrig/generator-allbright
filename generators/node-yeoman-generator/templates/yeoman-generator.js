@@ -1,6 +1,13 @@
 const YeomanGenerator = require('yeoman-generator');
 
 module.exports = class extends YeomanGenerator {
+<% if (yeomanMethods.includes('constructor')) { -%>
+  constructor(args, opts) {
+    // Constructor for specifying yeoman arguments and options
+    super(args, opts);
+  }
+
+<% } -%>
 <% if (yeomanMethods.includes('initializing')) { -%>
   async initializing() {
     // Your initialization methods
@@ -14,9 +21,8 @@ module.exports = class extends YeomanGenerator {
   async prompting() {
     // Where you prompt users for options (where you’d call this.prompt())
     const { log } = this;
-    this.answers = await this.prompt([
-
-    ]);
+    const prompts = <%- JSON.stringify(inquirerPrompts) %>;
+    this.answers = await this.prompt(prompts);
     log('prompting fn executed');
   }
 
