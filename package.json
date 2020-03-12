@@ -3,25 +3,33 @@
   "version": "1.0.3",
   "description": "Code generators for Andrew Allbright projects",
   "files": [
-    "generators"
+    "dist.js"
   ],
   "keywords": [
     "yeoman-generator"
   ],
   "author": "Andrew Allbright",
   "scripts": {
-    "start": "node main.js"
+    "start": "ts-node main.ts",
+    "build": "tsc --build tsconfig.json"
   },
   "license": "MIT",
   "dependencies": {
+    "@types/inquirer": "^6.5.0",
     "common-tags": "^1.8.0",
+    "extended-yo-generator": "^1.0.13",
     "inquirer": "^6.2.1",
     "ramda": "^0.26.1",
     "yeoman-environment": "^2.8.0",
     "yeoman-generator": "^3.2.0"
   },
   "devDependencies": {
+    "@types/yeoman-environment": "^2.3.3",
+    "@types/yeoman-generator": "^3.1.4",
+    "copyfiles": "^2.2.0",
     "generator-generator": "^4.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3",
     "yo": "^3.1.1"
   }
 }

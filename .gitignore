@@ -1,4 +1,4 @@
-
+**/*.map
 # General
 .DS_Store
 .AppleDouble

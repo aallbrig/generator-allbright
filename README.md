@@ -1,4 +1,4 @@
-#### YeomanGenerator Allbright
+#### YeomanGeneratorTs Allbright
 
 Andrew Allbright specific "meta-programming" code generators.
 
