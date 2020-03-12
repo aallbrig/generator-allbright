@@ -11,7 +11,6 @@ export default class extends Generator {
         ---
         yo allbright:gitignore
         yo allbright:bash-basic-script
-        yo allbright:node-yeoman-generator
         yo allbright:typescript-yeoman-generator
       `
     );
